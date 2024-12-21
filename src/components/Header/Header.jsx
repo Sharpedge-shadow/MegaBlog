@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Logo,LogoutBtn } from './index'
+import {Container,Logo,LogoutBtn } from '../index'
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -16,12 +16,12 @@ function Header(){
         }, 
         {
           name: "Login",
-          slug: "/login",
+          slug: "/Login",
           active: !authStatus,
       },
       {
           name: "Signup",
-          slug: "/signup",
+          slug: "/Signup",
           active: !authStatus,
       },
       {

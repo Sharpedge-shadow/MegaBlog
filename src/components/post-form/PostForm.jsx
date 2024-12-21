@@ -79,7 +79,7 @@ export default function PostForm({post}){
         })
 
         return () =>{
-            subscription.unsubscribe()
+            subscription.unsubscribe() //for memory management 
         }
     }
     ,[watch,slugTransform,setValue])
